@@ -6,6 +6,15 @@ h1, h2 {
     color:darkviolet;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+            
+th, td {
+    text-align: center;
+}
+
 .evenrow {
     background-color: rgb(192, 154, 245);
 }
