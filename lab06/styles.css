@@ -21,6 +21,6 @@ th, td {
     text-align: center;
 }
 
-.evenrow tr {
-    color: rgb(192, 154, 245);
+.evenrow {
+    background-color: rgb(192, 154, 245);
 }
