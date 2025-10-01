@@ -2,8 +2,14 @@ body {
   font-family: "Times New Roman", Times;
 }
 
-h1, h2 {
+h1 {
     color:darkviolet;
+    font-size: 2em;
+}
+
+h2 {
+    color:darkviolet;
+    font-size: 1.5em;
 }
 
 table, th, td {
@@ -15,14 +21,6 @@ th, td {
     text-align: center;
 }
 
-.evenrow {
+.evenrow td {
     background-color: rgb(192, 154, 245);
-}
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.5em;
 }
