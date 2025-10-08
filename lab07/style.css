@@ -15,6 +15,18 @@ h1, h2, h3, h4 {
     margin-top: 1.2em;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+            
+th, td {
+    text-align: center;
+}
+
+.evenrow {
+    background-color: rgb(192, 154, 245);
+}
 
 a {
     color: #0077CC;
