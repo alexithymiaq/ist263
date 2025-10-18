@@ -109,7 +109,7 @@ footer p {
 footer::after {
     content: "";
     display: block;
-    clear: block;
+    clear: both;
 }
 
 footer .left {
