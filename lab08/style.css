@@ -91,3 +91,26 @@ nav ul li a:focus {
     background-color: #FCA311;
     color: #1B1B1E;
 }
+
+footer {
+    background-color: #2B2D42;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+    color: #FCA311;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
