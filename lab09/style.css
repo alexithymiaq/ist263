@@ -147,6 +147,11 @@ footer .right {
     background-color: #fff3e0;
 }
 
+.row h2 {
+    color: #1B1B1E;
+    margin-top: 0;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -156,10 +161,21 @@ form input[type="text"], form input[type="email"], form input[type="submit"] {
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #2B2D42;
+}
+
+form input[type="submit"] {
+    background-color: #D62828;
+    color: white;
+    border: none;
 }
 
 iframe {
     width: 100%;
     border-radius: 10px;
+}
+
+body {
+    margin: 20px;
+    background-color: #F4F4F9;
 }
