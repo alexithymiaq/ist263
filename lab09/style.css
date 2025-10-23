@@ -161,21 +161,10 @@ form input[type="text"], form input[type="email"], form input[type="submit"] {
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid #2B2D42;
-}
-
-form input[type="submit"] {
-    background-color: #D62828;
-    color: white;
-    border: none;
+    border: 1px solid #D62828;
 }
 
 iframe {
     width: 100%;
     border-radius: 10px;
-}
-
-body {
-    margin: 20px;
-    background-color: #F4F4F9;
 }
