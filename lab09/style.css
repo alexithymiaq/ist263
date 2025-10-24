@@ -183,7 +183,6 @@ form input[type="submit"]:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: bold;
 }
 
 
