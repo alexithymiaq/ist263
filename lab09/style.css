@@ -158,6 +158,9 @@ form input[type="submit"] {
     border-radius: 6px;
     border: 1px solid #D62828;
     font-size: 1em;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
 }
 
 form input[type="submit"] {
