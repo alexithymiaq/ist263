@@ -168,17 +168,21 @@ iframe {
     border-radius: 10px;
 }
 
+.title {
+    text-align: center;
+    margin-top: 30px;
+    color: #D62828;
+}
+
 .skillsflexbox {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
     background-color: #E0F2FF;
     border-radius: 12px;
     padding: 30px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto;
 }
 
 .skillstable {
@@ -187,14 +191,10 @@ iframe {
 
 .skillstable table {
     margin: 0 auto;
-    border-collapse: collapse;
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .skillsimage {
     text-align: center;
-    flex-basis: 50%;
 }
 
 .skillsimage img {
