@@ -125,6 +125,7 @@ footer .right {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
     gap: 0;
     margin: 40px auto;
     width: 90%;
@@ -229,6 +230,11 @@ iframe {
 }
 
 .skillsimage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.responsiveness-ten {
     max-width: 100%;
     height: auto;
 }
