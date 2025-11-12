@@ -42,3 +42,40 @@ nav a:hover {
     background-color: #FFCC00;
     color: #1A1A1A;
 }
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    color: #E3350D;
+    text-align: center;
+}
+
+h3 {
+    color: #3B4CCA;
+}
+
+.flex-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.flex-section img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 250px;
+}
