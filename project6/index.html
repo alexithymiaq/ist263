@@ -1,60 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Pokemon TCG</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon TCG History & Overview</title>
+  <style>
+    /* ----------- GLOBAL STYLES ----------- */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #F8F9FA;
+      color: #1A1A1A;
+      line-height: 1.6;
+    }
 
-    <body>
+    header {
+      background-color: #3B4CCA;
+      color: white;
+      text-align: center;
+      padding: 1rem 0.5rem;
+    }
+
+    header h1 {
+      margin: 0.3rem 0;
+    }
+
+    /* ----------- NAVIGATION ----------- */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #E3350D;
+    }
+
+    nav li {
+      margin: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #FFCC00;
+      color: #1A1A1A;
+    }
+
+    /* ----------- MAIN CONTENT ----------- */
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: #E3350D;
+      text-align: center;
+    }
+
+    h3 {
+      color: #3B4CCA;
+    }
+
+    /* ----------- FLEX SECTIONS ----------- */
+    .flex-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .flex-section img {
+      width: 250px;
+      border-radius: 15px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    /* ----------- ABOUT AUTHOR ----------- */
+    .about-author {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      border-top: 2px solid #E3350D;
+      padding-top: 2rem;
+    }
+
+    .author-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .author-info img {
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    .author-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .author-links a img {
+      width: 35px;
+    }
+
+    .fav-pokemon img {
+      width: 250px;
+      border-radius: 20px;
+    }
+
+    /* ----------- FOOTER ----------- */
+    footer {
+      background-color: #3B4CCA;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* ----------- RESPONSIVE DESIGN ----------- */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .flex-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-author {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
   <header>
     <h1>Welcome to My Pokemon TCG World</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="legendary.html">Legendary Pokemon TCG Cards</a></li>
-        <li><a href="starting.html">How to Start Your Pokemon TCG Journey</a></li>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="legendary.html">Legendary Cards</a></li>
+        <li><a href="starting.html">Start Playing</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>My name is Alejandra. I am a current Senior at Syracuse University, and I have been collecting Pokémon cards since I was 8 years old.</p>
-      <h3>My History</h3>
-      <p>I first got into Pokémon when I was around 6 or 7 years old. My older cousins were huge fans and my journey started with watching Saturday morning episodes of the Pokémon anime. A world filled with mythical creatures that could be your companions fascinated me, and soon my cousins introduced me to the Pokémon TCG.</p>
-      <p>I would beg my parents for booster packs and carefully fill binders with my growing collection. My first themed set starred my favorite Pokémon at the time—Jigglypuff! Though I lost many playground battles, I learned and improved, and Pokémon became a way to connect with friends and family. This website celebrates that love and history.</p>
+    <h2>POKEMON TCG HISTORY & OVERVIEW</h2>
+
+    <section class="flex-section">
+      <div class="text-content">
+        <h3>Origins (1996-1999)</h3>
+        <p>Pokémon TCG was first published in Japan by Media Factory in 1996, then brought to the U.S. by Wizards of the Coast in 1999. The first expansion was the Base Set featuring the legendary "Base Set Charizard."</p>
+      </div>
+      <img src="media/base-set-charizard.jpg" alt="Base Set Charizard card">
     </section>
 
     <section>
-      <h2>Pokemon TCG History & Overview</h2>
-      <h3>Origins (1996–1999)</h3>
-      <p>Pokémon TCG was first published in Japan by Media Factory in 1996, then brought to the U.S. by Wizards of the Coast in 1999. The Base Set featured iconic cards like “Base Set Charizard.”</p>
-
       <h3>Growth & Evolution</h3>
-      <p>Pokémon exploded in popularity during the 1999–2000 craze, expanding into multiple sets, tournaments, and becoming a cultural phenomenon in trading card history.</p>
-
-      <h3>Competitive Play</h3>
-      <p>Pokémon TCG isn’t just about collecting — it features official tournaments and a competitive world championship that has continued strong since the early 2000s.</p>
-
-      <h3>Why Fans Collect & Play</h3>
-      <ul>
-        <li><strong>Nostalgia:</strong> Many players grew up with Pokémon and cherish the cards.</li>
-        <li><strong>Artwork:</strong> Each card features unique illustrations by different artists.</li>
-        <li><strong>Value:</strong> Some rare cards are highly sought after and valuable.</li>
-        <li><strong>Community:</strong> Trading and playing create friendships worldwide.</li>
-      </ul>
+      <p>Pokémon exploded in popularity during the 1999–2000 craze. It expanded into multiple sets, tournaments, and became a staple in trading card culture.</p>
     </section>
 
     <section>
-      <h2>Contact Information</h2>
-      <ul class="contact-links">
-        <li><a href="mailto:aslara05@icloud.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/alejandraslara">LinkedIn</a></li>
-        <li><a href="https://discordapp.com/users/527716694135930891">Discord</a></li>
-      </ul>
+      <h3>Why Fans Collect & Play</h3>
+      <div class="flex-section">
+        <img src="media/fan-collection.jpg" alt="Fans displaying Pokémon cards">
+        <div class="text-content">
+          <ul>
+            <li><strong>Nostalgia:</strong> Many players grew up with Pokémon and still cherish their cards.</li>
+            <li><strong>Artwork:</strong> Cards feature unique illustrations by many artists.</li>
+            <li><strong>Value:</strong> Some rare cards sell for thousands of dollars.</li>
+            <li><strong>Community:</strong> Playing and trading create bonds between fans worldwide.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-author">
+      <div class="author-info">
+        <h3>About the Author</h3>
+        <p>My name is Alejandra, a Senior at Syracuse University. I’ve been collecting Pokémon cards since I was 8 years old. This website is made with love and dedication to the world of Pokémon and its amazing community.</p>
+        <div class="author-links">
+          <a href="https://www.linkedin.com/in/alejandraslara"><img src="media/LI-In-Bug.png" alt="LinkedIn"></a>
+          <a href="mailto:aslara05@icloud.com"><img src="media/email-icon.png" alt="Email"></a>
+          <a href="https://discordapp.com/users/527716694135930891"><img src="media/Discord-Symbol-Blurple.png" alt="Discord"></a>
+        </div>
+      </div>
+      <div class="fav-pokemon">
+        <img src="media/jigglypuff.png" alt="Favorite Pokémon: Jigglypuff">
+      </div>
     </section>
   </main>
 
