@@ -37,7 +37,6 @@ body {
       font-weight: bold;
       padding: 0.5rem 1rem;
       border-radius: 10px;
-      transition: background 0.3s ease;
     }
 
     nav a:hover {
@@ -139,4 +138,3 @@ body {
         text-align: center;
       }
     }
-  </style>
