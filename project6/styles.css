@@ -6,15 +6,35 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background-color: #3B4CCA;
-    color: white;
+h1, h2, h3 {
+    font-weight: 700;
     text-align: center;
-    padding: 1rem 0.5rem;
 }
 
-header h1 {
-    margin: 0.3rem 0;
+h1 {
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: #E3350D;
+    margin-top: 2rem;
+}
+
+h3 {
+    color: #3B4CCA;
+}
+
+p, ul {
+    max-width: 900px;
+    margin: 0.5rem auto;
+    padding: 0 1 rem;
+}
+
+header {
+    background-color: #3B4CCA;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0.5rem;
 }
 
 nav ul {
@@ -35,7 +55,7 @@ nav a {
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
@@ -44,97 +64,71 @@ nav a:hover {
 }
 
 main {
+    padding: 2rem 1rem;
     max-width: 1000px;
     margin: auto;
-    padding: 2rem 1rem;
 }
 
 section {
-    margin-bottom: 3rem;
-}
-
-h2 {
-    color: #E3350D;
-    text-align: center;
-}
-
-h3 {
-    color: #3B4CCA;
+    margin-bottom: 2.5rem;
 }
 
 .flex-section {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.flex-section img {
-    width: 250px;
-    border-radius: 15px;
-}
-
-.text-content {
-    flex: 1;
-    min-width: 250px;
-}
-
-.about-author {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: flex-start;
-    border-top: 2px solid #E3350D;
-    padding-top: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-.author-info {
+.flex-item {
     flex: 1;
-    min-width: 50%;
+    min-width: 280px;
 }
 
-.author-info img {
-    width: 50px;
-    border-radius: 50%;
+ul li {
+    margin-bottom: 0.5rem;
 }
 
-.author-links {
+.contact-links {
+    list-style: none;
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
 }
 
-.author-links a img {
-    width: 35px;
-}
+.contact-links a {
+      text-decoration: none;
+      color: #3B4CCA;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
 
-.fav-pokemon img {
-    width: 250px;
-    border-radius: 20px;
-}
+.contact-links a:hover {
+      color: #E3350D;
+    }
 
 footer {
     background-color: #3B4CCA;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
 
 @media (max-width: 768px) {
-    nav ul {
+      nav ul {
         flex-direction: column;
         align-items: center;
-    }
+      }
 
-    .flex-section {
+      .flex-section {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-    }
+      }
 
-    .about-author {
-        flex-direction: column;
-        text-align: center;
-    }
+      p, ul {
+        padding: 0 1rem;
+      }
 }
-
