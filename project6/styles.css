@@ -79,3 +79,62 @@ h3 {
     flex: 1;
     min-width: 250px;
 }
+
+.about-author {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-top: 2px solid #E3350D;
+    padding-top: 2rem;
+}
+
+.author-info {
+    flex: 1;
+    min-width: 50%;
+}
+
+.author-info img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.author-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.author-links a img {
+    width: 35px;
+}
+
+.fav-pokemon img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #3B4CCA;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-author {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
