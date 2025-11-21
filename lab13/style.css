@@ -9,7 +9,7 @@ body {
 
 
 h1, h2, h3, h4 {
-    color: #D62828;
+    color: #8B0000;
     font-family: 'Poppins', sans-serif;
     margin-top: 1.2em;
 }
@@ -29,7 +29,7 @@ th, td {
 }
 
 th {
-    background-color: #D62828;
+    background-color: #8B0000;
     color: #FFFFFF;
     text-transform: uppercase;
 }
@@ -49,7 +49,7 @@ caption {
 }
 
 a {
-    color: #D62828;
+    color: #8B0000;
     text-decoration: none;
     font-weight: 600;
 }
@@ -64,7 +64,7 @@ a:hover, a:focus {
 }
 
 a:active {
-    color: #2B2D42;
+    color: #400000;
 }
 
 nav {
@@ -166,14 +166,14 @@ form input[type="submit"] {
     padding: 8px;
     margin-top: 5px;
     border-radius: 6px;
-    border: 1px solid #D62828;
+    border: 1px solid #8B0000;
     font-size: 1em;
     width: 100%;
     max-width: 400px;
 }
 
 form input[type="submit"] {
-    background-color: #D62828;
+    background-color: #8B0000;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -211,7 +211,7 @@ iframe {
 }
 
 .title {
-    color: #D62828;
+    color: #8B0000;
     font-size: 2.5em;
 }
 
