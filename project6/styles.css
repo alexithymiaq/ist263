@@ -18,10 +18,12 @@ header h1 {
   font-size: 1.4rem;
 }
 
-h1, h2, h3 {
-  font-family: "Press Start 2P", !important;
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
   font-weight: 400;
+  font-style: normal;
 }
+
 
 nav ul {
   list-style: none;
