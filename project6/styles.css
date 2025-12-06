@@ -19,7 +19,7 @@ header h1 {
 }
 
 h1, h2, h3 {
-  font-family: "Press Start 2P", system-ui;
+  font-family: "Press Start 2P", !important;
   font-weight: 400;
 }
 
