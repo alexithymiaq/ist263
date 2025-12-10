@@ -188,7 +188,6 @@ footer {
   margin-top: 2rem;
 }
 
-
 .card {
   background: white;
   padding: 1rem;
@@ -221,7 +220,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -242,4 +240,5 @@ footer {
     width: 100%;
   }
 }
+
 
