@@ -219,15 +219,6 @@ footer {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.header-image2 img {
-  width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border: 2px solid #ccc;
-  border-radius: 12px;
-}
-
 @media (max-width: 768px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
