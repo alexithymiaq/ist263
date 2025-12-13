@@ -401,35 +401,3 @@ main a:hover {
     justify-self: center;
   }
 }
-
-.play-trade-layout {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-.play-box {
-  background: transparent;
-}
-
-.trade-box {
-  background-color: white;
-  padding: 1.6rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
-}
-
-.trade-box h3 {
-  margin-top: 0;
-}
-
-.trade-box li {
-  margin-bottom: 0.6rem;
-}
-
-@media (max-width: 900px) {
-  .play-trade-layout {
-    grid-template-columns: 1fr;
-  }
-}
