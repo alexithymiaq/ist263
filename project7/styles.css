@@ -340,3 +340,65 @@ main a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.objective-slider {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 2rem auto 0;
+}
+
+.slide {
+  display: none;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: slideFade 0.4s ease;
+}
+
+.slide.active {
+  display: block;
+}
+
+.arrow {
+  background-color: #E3350D;
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #FFCC00;
+  color: #1A1A1A;
+  transform: scale(1.1);
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  .objective-slider {
+    grid-template-columns: 1fr;
+  }
+
+  .arrow {
+    justify-self: center;
+  }
+}
+

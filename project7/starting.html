@@ -100,30 +100,49 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="wireframe-section">
                 <h2>How To Play The Game (Basics)</h2>
-                <h3>Objective</h3>
-                <p>
-                    Knock out your opponent’s Pokémon and 
-                    collect all prize cards (or whatever else is at stake)
-                </p>
-                <h3>Setup</h3>
-                <p>
-                    Each player has a deck of 60. You'll then draw 7 cards,
-                    place 1 active Pokemon, and set up 5 on your bench.
-                </p>
-                <h3>Turn Structure</h3>
-                <p>
-                    Each player will draw a card, play a basic Pokemon, evolve Pokemon,
-                    or attach energy. You can play trainer cards for effects and attack
-                    if you have the required energy.
-                </p>
-                <h3>Winning Conditions</h3>
-                <p>
-                    The goal is to collect all prize cards, ensure your opponent cannot draw
-                    a card at the start of their turn, or if your opponent has no Pokemon left!
-                    You can click this <a href="https://www.youtube.com/watch?v=eKC5PlYoboE" target="_blank">link</a> to watch a youtube video overview on how to play!
-                </p>
+
+                <div class="objective-slider">
+                    <button class="arrow left" aria-label="Previous step">&#8592;</button>
+
+                    <div class="slide active">
+                    <h3>Objective</h3>
+                    <p>
+                        Knock out your opponent’s Pokémon and collect all prize cards
+                        (or meet other win conditions).
+                    </p>
+                    </div>
+
+                <div class="slide">
+                    <h3>Setup</h3>
+                    <p>
+                        Each player draws 7 cards, places 1 Active Pokémon,
+                        and sets up 5 Pokémon on the bench.
+                    </p>
+                    </div>
+
+               <div class="slide">
+                    <h3>Turn Structure</h3>
+                    <p>
+                        Draw a card, play Pokémon, attach energy, use Trainer cards, and attack if possible.
+                    </p>
+                </div>
+
+                <div class="slide">
+                    <h3>Winning Conditions</h3>
+                    <p>
+                        Win by taking all prize cards, leaving your opponent with no Pokémon,
+                        or preventing them from drawing a card.
+                        <br><br>
+                        <a href="https://www.youtube.com/watch?v=eKC5PlYoboE" target="_blank">
+                        Watch a gameplay overview
+                        </a>
+                    </p>
+                </div>
+
+                <button class="arrow right" aria-label="Next Step">&#8594</button>
+                </div>
             </section>
             <section>
                 <h2>Trading Tips</h2>
@@ -141,5 +160,29 @@
         <footer>
             <p>&copy; 2025 Alejandra Lara</p>
         </footer>
+
+        <script>
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.querySelector('.arrow.left');
+            const nextBtn = document.querySelector('.arrow.right');
+
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[index].classList.add('active');
+            }
+
+            prevBtn.addEventListener('click', () => {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            });
+        </script>
+
      </body>
 </html> 
