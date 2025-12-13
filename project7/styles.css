@@ -1,0 +1,245 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #F8F9FA;
+  color: #1A1A1A;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #3B4CCA;
+  color: white;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+header h1 {
+  margin: 0.3rem 0;
+  font-size: 1.4rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #E3350D;
+}
+
+nav li {
+  margin: 0.3rem 0.6rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+}
+
+nav a.active, nav a:hover {
+  background-color: #FFCC00;
+  color: #1A1A1A;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+}
+
+h2 {
+  color: #E3350D;
+  text-align: center;
+  margin-top: 0;
+}
+
+h3 {
+  color: #3B4CCA;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+}
+
+.header-image {
+  text-align: center;
+  margin: 1.5rem auto 2rem auto;
+}
+
+.header-image img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+.flex-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.flex-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-section img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 260px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.charizard-img,
+.tournament-img {
+  border-radius: 15px;
+  align-self: center;
+}
+
+.about-author {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-top: 2px solid #E3350D;
+  padding-top: 1.5rem;
+}
+
+.author-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.author-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.author-links img {
+  width: 30px;
+}
+
+.fav-pokemon img {
+  width: 220px;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #3B4CCA;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-section, .flex-section.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flex-section img {
+    margin: 0 auto 1rem auto;
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .about-author {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-image img {
+    max-width: 100%;
+  }
+
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.card h3 {
+  margin-top: 0.5rem;
+}
+
+.special-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.special-flex img {
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .special-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .special-flex img {
+    width: 90%;
+    max-width: 330px;
+  }
+
+  .special-flex .text-content {
+    width: 100%;
+  }
+}
+
+
