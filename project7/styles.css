@@ -343,21 +343,20 @@ main a:hover {
 
 .objective-slider {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto minmax(280px, 420px) auto;
   align-items: center;
-  gap: 1.5rem;
-  max-width: 700px;
-  margin: 2rem auto 0;
+  gap: 1.2rem;
+  margin: 1.5rem auto 0;
 }
 
 .slide {
   display: none;
   background-color: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   text-align: center;
-  animation: slideFade 0.4s ease;
+  max-width: 420px;
 }
 
 .slide.active {
@@ -399,5 +398,37 @@ main a:hover {
 
   .arrow {
     justify-self: center;
+  }
+}
+
+.play-trade-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.play-box {
+  background: transparent;
+}
+
+.trade-box {
+  background-color: white;
+  padding: 1.6rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.trade-box h3 {
+  margin-top: 0;
+}
+
+.trade-box li {
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 900px) {
+  .play-trade-layout {
+    grid-template-columns: 1fr;
   }
 }
