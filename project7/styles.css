@@ -51,7 +51,7 @@ main {
 }
 
 h2 {
-  color: #E3350D;
+  color: #C6281C;
   text-align: center;
   margin-top: 0;
 }
@@ -118,7 +118,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  border-top: 2px solid #E3350D;
+  border-top: 2px solid #C6281C;
   padding-top: 1.5rem;
 }
 
@@ -311,7 +311,7 @@ main a {
 }
 
 main a:hover {
-  color: #E3350D;
+  color: #C6281C;
 }
 
 @keyframes sectionFadeUp {
@@ -369,7 +369,7 @@ main a:hover {
 }
 
 .arrow {
-  background-color: #E3350D;
+  background-color: #C6281C;
   color: white;
   border: none;
   font-size: 1.5rem;
