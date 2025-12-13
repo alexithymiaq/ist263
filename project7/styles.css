@@ -365,6 +365,7 @@ main a:hover {
 
 .slide.active {
   display: block;
+  animation: slideFade 0.5s ease;
 }
 
 .arrow {
