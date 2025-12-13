@@ -342,21 +342,25 @@ main a:hover {
 }
 
 .objective-slider {
-  display: grid;
-  grid-template-columns: auto minmax(280px, 420px) auto;
+  display: flex;
   align-items: center;
-  gap: 1.2rem;
-  margin: 1.5rem auto 0;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto 0;
+  max-width: 500px;
+  width: 100%;
 }
 
 .slide {
   display: none;
   background-color: white;
-  padding: 1.5rem;
+  padding: 1.5rem 1.8rem;
   border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
   text-align: center;
   max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .slide.active {
@@ -367,11 +371,12 @@ main a:hover {
   background-color: #E3350D;
   color: white;
   border: none;
-  font-size: 1.6rem;
-  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.9rem;
   border-radius: 50%;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.3s ease;
+  flex-shrink: 0;
 }
 
 .arrow:hover {
@@ -380,10 +385,19 @@ main a:hover {
   transform: scale(1.1);
 }
 
+.play-box h3 {
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.objective-slider button {
+  margin-top: 0.3rem;
+}
+
 @keyframes slideFade {
   from {
     opacity: 0;
-    transform: scale(0.96);
+    transform: scale(0.95);
   }
   to {
     opacity: 1;
@@ -393,11 +407,11 @@ main a:hover {
 
 @media (max-width: 600px) {
   .objective-slider {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .arrow {
-    justify-self: center;
+    margin: 0.4rem 0;
   }
 }
 
